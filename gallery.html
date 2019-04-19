@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>National Park Image Gallery</title>
+	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="icon" type="image/png" href="images/logo.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="css/lightbox.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+	<main>
+		<h1 id="parks_gallery">National Parks Image Gallery</h1>
+		<div class = "images">
+			<!-- data-alt shows alt text for data-title -->
+
+			<a href="images/acadia_coast2.jpg" data-lightbox="park_pic" data-title="A sunny day in Acadia National Park"  data-alt="A sunny day in Acadia National Park"><img src="images/acadia_coast2.jpg" alt="Hikers on a path along the Acadia National Park's coast"></a>
+
+			<a href="images/acadia_flowers.jpg" data-lightbox="park_pic" data-title="Summer in Acadia National Park"  data-alt="Summer in Acadia National Park"><img src="images/acadia_flowers.jpg" alt="Summer in Acadia National Park"></a>
+
+			<a href="images/acadia_razorbills.jpg" data-lightbox="park_pic" data-title="Razorbills in Acadia"  data-alt="Razorbills in Acadia"><img src="images/acadia_razorbills.jpg" alt="Razorbills in Acadia"></a>
+
+			<a href="images/acadia_coast1.jpg" data-lightbox="park_pic" data-title="Acadia National Park Coast" data-alt="Acadai National Park Coast"><img src="images/acadia_coast1.jpg" alt="Acadia National Park Coast"></a>
+
+			<a href="images/acadia_sunset.jpg" data-lightbox="park_pic" data-title="Sunset in Acadia National Park"  data-alt="Sunset in Acadia National Park"><img src="images/acadia_sunset.jpg" alt="Sunset in Acadia National Park"></a>
+
+			<a href="images/cactus2.jpg" data-lightbox="park_pic" data-title="Organ Pipe Cactus during spring flowering season"  data-alt="Organ Pipe Cactus during spring flowering season"><img src="images/cactus2.jpg" alt="Organ Pipe Cactus during spring flowering season"></a>
+
+			<a href="images/acadia_fall.jpg" data-lightbox="park_pic" data-title="Fall in Acadia"  data-alt="Fall in Acadia"><img src="images/acadia_fall.jpg" alt="Fall in Acadia"></a>
+
+			<a href="images/cactus_night.jpg" data-lightbox="park_pic" data-title="Night glow in Organ Pipe National Monument during spring blooming season"  data-alt="Night glow in Organ Pipe National Monument during spring blooming season"><img src="images/cactus_night.jpg" alt="Night glow in Organ Pipe National Monument during spring blooming season"></a>
+
+			<a href="images/glacier_marmot.jpg" data-lightbox="park_pic" data-title="Marmot of Glacier National Park"  data-alt="Marmot of Glacier National Park"><img src="images/glacier_marmot.jpg" alt="Marmot of Glacier National Park"></a>
+
+			<a href="images/glacier_hike.jpeg" data-lightbox="park_pic" data-title="A snowy hike in Glacier National Park"  data-alt="A snowy hike in Glacier National Park"><img src="images/glacier_hike.jpeg" alt="A snowy hike in Glacier National Park"></a>
+
+			<a href="images/glacier_landscape.jpg" data-lightbox="park_pic" data-title="Classic photo of Glacier National Park in summer"  data-alt="Classic photo of Glacier National Park in summer"><img src="images/glacier_landscape.jpg" alt="Classic photo of Glacier National Park in summer"></a>
+
+			<a href="images/img_cactus.jpg" data-lightbox="park_pic" data-title="Twilight glow in Organ Pipe National Monument"  data-alt="Twilight glow in Organ Pipe National Monument"><img src="images/img_cactus.jpg" alt="Twilight glow in Organ Pipe National Monument"></a>
+		</div>
+	</main>
+	<footer>
+		<div class="tree"><i class="fas fa-tree"></i></div>
+		<div class="countdown">
+			<h2>Earth Day is in: <span id="timer"></span></h2>
+		</div>
+	</footer>
+	<script src="js/lightbox.js"></script>
+	<script src="js/countdown.js"></script>
+	<script>
+		$("a[href='#nav']").click(function(){
+			$("html, body").animate({ scrollTop: 0}, "slow");
+			return false;
+		});
+	</script>
+</body>
+</html>
